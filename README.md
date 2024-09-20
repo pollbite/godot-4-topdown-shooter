@@ -1,6 +1,7 @@
 9/19/24 - Turned in the Twin Stick Shooter Part 1 Assignment. Two alternative projectiles were implemented. 
 
 Spray Projectile: Press the F key to cause a radial spray of bullets. (Aiming to implement a delay at a later stage.)
+
 Charged Projectile: Long press the right mouse button for 2 seconds to fire a charged shot. 
 
 Storyboards for Projectiles: 
