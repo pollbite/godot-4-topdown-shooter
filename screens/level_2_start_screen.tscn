@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://u1wlov62il4j"]
+
+[ext_resource type="Script" path="res://screens/level_2_start_screen.gd" id="1_snqww"]
+[ext_resource type="Texture2D" uid="uid://iwaksovo3w88" path="res://screens/Fire_16_16x16.png" id="1_xk3us"]
+
+[node name="Level2StartScreen" type="Node2D"]
+script = ExtResource("1_snqww")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(573, 589)
+scale = Vector2(74, 74)
+texture = ExtResource("1_xk3us")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 312.0
+offset_top = 148.0
+offset_right = 380.0
+offset_bottom = 188.0
+scale = Vector2(8.32, 8.32)
+text = "Level 2"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 332.0
+offset_top = 342.0
+offset_right = 448.0
+offset_bottom = 382.0
+scale = Vector2(3.6, 3.6)
+text = "[Click to begin]"

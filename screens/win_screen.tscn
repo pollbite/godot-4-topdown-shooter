@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://ur2b6kkdvo4a"]
+
+[ext_resource type="Texture2D" uid="uid://iwaksovo3w88" path="res://screens/Fire_16_16x16.png" id="1_0m6ou"]
+[ext_resource type="Script" path="res://screens/win_screen.gd" id="1_q2fl4"]
+
+[node name="WinScreen" type="Node2D"]
+script = ExtResource("1_q2fl4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(582, 582)
+scale = Vector2(73.75, 73.75)
+texture = ExtResource("1_0m6ou")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 239.0
+offset_top = 272.0
+offset_right = 430.0
+offset_bottom = 307.0
+scale = Vector2(3.48116, 3.48116)
+text = "You've met your quota!"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 271.0
+offset_top = 383.0
+offset_right = 462.0
+offset_bottom = 418.0
+scale = Vector2(3.48116, 3.48116)
+text = "[Replay? Click again]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 196.0
+offset_top = 129.0
+offset_right = 323.0
+offset_bottom = 164.0
+scale = Vector2(6.12855, 6.12855)
+text = "Congratulations"

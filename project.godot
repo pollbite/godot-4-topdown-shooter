@@ -11,9 +11,19 @@ config_version=5
 [application]
 
 config/name="TwinStick"
-run/main_scene="res://main.tscn"
+run/main_scene="res://screens/start_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ScoreManager="*res://actors/enemies/scoreManager.gd"
+EnemyCounter="*res://shared_scripts/enemy_counter.gd"
+HealthManager="*res://actors/enemies/health_manager.gd"
+
+[global_group]
+
+Player=""
 
 [input]
 
@@ -40,6 +50,11 @@ move_down={
 charge_shot={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(335, 44),"global_position":Vector2(349, 114),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+click_window={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(248, 19),"global_position":Vector2(262, 89),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 

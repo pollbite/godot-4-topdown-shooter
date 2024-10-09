@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwjr450byvjrv"]
+
+[ext_resource type="Script" path="res://shared_scripts/hud.gd" id="1_gw32x"]
+[ext_resource type="Texture2D" uid="uid://wssd50qsqqk3" path="res://environment/Green_16_16x16.png" id="2_muodx"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_gw32x")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(171.141, 571.533)
+scale = Vector2(15.7676, 4.19162)
+texture = ExtResource("2_muodx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(168, 77.0743)
+scale = Vector2(15.625, 4.25928)
+texture = ExtResource("2_muodx")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = 78.1406
+offset_top = 553.533
+offset_right = 157.141
+offset_bottom = 576.533
+scale = Vector2(1.34376, 1.34376)
+text = "Health: 10"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 70.0
+offset_top = 53.0
+offset_right = 131.0
+offset_bottom = 76.0
+scale = Vector2(1.8, 1.8)
+text = "Score: 0"

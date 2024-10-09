@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://5wpkv17cnp05"]
+
+[ext_resource type="Script" path="res://screens/game_over_screen.gd" id="1_yp6vg"]
+[ext_resource type="Texture2D" uid="uid://iwaksovo3w88" path="res://screens/Fire_16_16x16.png" id="2_wtxj6"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yp6vg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 361)
+scale = Vector2(73, 73)
+texture = ExtResource("2_wtxj6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 253.0
+offset_top = 161.0
+offset_right = 351.0
+offset_bottom = 201.0
+scale = Vector2(6.44, 6.44)
+text = "GAME OVER"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 303.0
+offset_top = 329.0
+offset_right = 437.0
+offset_bottom = 360.0
+scale = Vector2(3.92, 3.92)
+text = "[Click to Restart]"
